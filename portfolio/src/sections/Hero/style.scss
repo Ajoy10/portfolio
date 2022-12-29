@@ -1,9 +1,29 @@
 main {
+    padding: 40px 0px;
     color: white;
 
     h1 {
+        font-size: 28px;
+        font-weight: 700;
+
         #highlight {
             color: #0D41E1;
+        }
+    }
+
+    .cta {
+        .buttons {
+            display: flex;
+            justify-content: start;
+            margin-top: 46px;
+            margin-bottom: 18px;
+            gap: 16px;
+
+            a.button {
+                font-size: 18px;
+
+                margin: 0px;
+            }
         }
     }
 }
