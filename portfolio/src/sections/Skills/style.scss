@@ -1,0 +1,32 @@
+section#skills {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    #skills-card-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+
+        .skills-card {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            .skills-list {
+                display: flex;
+                gap: 20px;
+
+                .skill {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+}

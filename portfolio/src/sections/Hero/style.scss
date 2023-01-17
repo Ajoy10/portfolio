@@ -1,6 +1,10 @@
 main {
-    padding: 40px 0px;
-    color: white;
+    // padding: 40px 0px;
+
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1 {
         font-size: 28px;
@@ -14,7 +18,7 @@ main {
     .cta {
         .buttons {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             margin-top: 46px;
             margin-bottom: 18px;
             gap: 16px;
