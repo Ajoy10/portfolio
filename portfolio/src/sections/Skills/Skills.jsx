@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import React from "react";
-import Card from "../../components/Header/Card/Card";
+import Card from "../../components/Card/Card";
 import "./style.scss";
 
 export default function Skills() {
