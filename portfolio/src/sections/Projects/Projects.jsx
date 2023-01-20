@@ -33,8 +33,8 @@ export default function Projects() {
     <section id="projects">
       <h2>Projects</h2>
       <div className="project-list">
-        {projects.map((project) => {
-          return <ProjectCard project={project} />;
+        {projects.map((project, index) => {
+          return <ProjectCard project={project} key={index} />;
         })}
       </div>
     </section>
@@ -59,9 +59,9 @@ function ProjectCard({ project }) {
         <div className="project-description">{project.description}</div>
         <div className="project-links">
           {project.links &&
-            project.links.map((link) => {
+            project.links.map((link, index) => {
               return (
-                <a href={link.url}>
+                <a href={link.url} key={index}>
                   <Icon icon={link.iconify_code} width="24px" />
                 </a>
               );

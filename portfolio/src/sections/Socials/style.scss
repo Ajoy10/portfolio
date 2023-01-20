@@ -1,0 +1,21 @@
+section#socials {
+    margin-top: 48px;
+
+    .card {
+        display: flex;
+        gap: 14px;
+
+        a.social-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 6px;
+        }
+
+        width: min-content;
+    }
+
+    margin-bottom: 48px;
+}
