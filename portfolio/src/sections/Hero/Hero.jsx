@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import React from "react";
+import { github_link, linkedin_link } from "../../utils/links";
 import "./style.scss";
 
 export default function Hero() {
@@ -23,11 +24,21 @@ export default function Hero() {
           </a>
         </div>
         <div className="socials">
-          <a href="#" className="button social">
-            <Icon icon="ant-design:linkedin-filled" height="36" />
-          </a>
-          <a href="#" className="button social">
+          <a
+            href={github_link}
+            target="_blank"
+            rel="noreferrer"
+            className="button social"
+          >
             <Icon icon="ant-design:github-filled" height="36" />
+          </a>
+          <a
+            href={linkedin_link}
+            target="_blank"
+            rel="noreferrer"
+            className="button social"
+          >
+            <Icon icon="ant-design:linkedin-filled" height="36" />
           </a>
         </div>
       </div>
