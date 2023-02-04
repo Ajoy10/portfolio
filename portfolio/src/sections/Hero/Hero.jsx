@@ -15,10 +15,10 @@ export default function Hero() {
       </h1>
       <div className="cta">
         <div className="buttons">
-          <a href="#" className="button primary">
+          <a href="#projects" className="button primary">
             Projects
           </a>
-          <a href="#" className="button secondary">
+          <a href="#contact" className="button secondary">
             Contact
           </a>
         </div>

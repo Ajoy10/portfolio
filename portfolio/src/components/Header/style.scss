@@ -1,5 +1,11 @@
 header {
 
+    box-sizing: border-box;
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -8,4 +14,84 @@ header {
     align-items: center;
 
     background-color: #0B0C15;
+
+    .sidebar-wrapper {
+        position: absolute;
+        top: 0;
+        left: -20px; // -20px to compensate for padding in App
+        width: 100vw;
+        z-index: 10;
+
+        height: 120vh;
+
+        background-color: rgba($color: #000000, $alpha: 0.75);
+        display: flex;
+        justify-content: flex-end;
+
+        .sidebar {
+
+
+            width: calc(100vw - 64px);
+
+
+            display: flex;
+            flex-direction: column;
+
+
+
+
+            background-color: #161C21;
+
+            padding: 12px;
+
+            height: 100%;
+
+
+
+            #sidebar-top {
+                width: 100%;
+            }
+
+            .sidebar-content {
+                margin-top: 64px;
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 10px;
+
+                .sidebar-link {
+                    display: flex;
+                    padding: 10px;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        width: 60%;
+                        height: 100%;
+                        text-align: center;
+                    }
+
+                    // animation: sidebar_entry_anim 300ms ease-in;
+
+
+                }
+            }
+        }
+    }
+}
+
+@keyframes sidebar_entry_anim {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
 }
