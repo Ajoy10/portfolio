@@ -30,13 +30,37 @@ export default function Header() {
       <div id="logo">
         <img src={logo} alt="Ajoy, logo" />
       </div>
-      <div id="mobile-menu" onClick={OnSidebarOpenHandler}>
+      <div
+        id="mobile-menu"
+        className="hide-on-desktop"
+        onClick={OnSidebarOpenHandler}
+      >
         <Icon icon={"ant-design:menu-outlined"} height="32" />
       </div>
       {sideBarOpen ? <Sidebar onCloseHandler={OnSidebarCloseHandler} /> : <></>}
+      <NavLinks className="hide-on-mobile" />
     </header>
   );
 }
+
+const NavLinks = ({ className, onCloseHandler = null }) => {
+  return (
+    <nav className={className || ""}>
+      <div className="nav-link" onClick={onCloseHandler}>
+        <a href="#skills">Skills</a>
+      </div>
+      <div className="nav-link" onClick={onCloseHandler}>
+        <a href="#projects">Projects</a>
+      </div>
+      <div className="nav-link" onClick={onCloseHandler}>
+        <a href="#">Resume</a>
+      </div>
+      <div className="nav-link" onClick={onCloseHandler}>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  );
+};
 
 const Sidebar = ({ onCloseHandler }) => {
   return (
@@ -44,13 +68,11 @@ const Sidebar = ({ onCloseHandler }) => {
       className="sidebar-wrapper"
       onClick={(e) => {
         if (e.target === e.currentTarget) {
-          console.log(e.currentTarget);
-
           onCloseHandler();
         }
       }}
     >
-      <div className="sidebar">
+      <div className="sidebar hide-on-desktop">
         <div id="sidebar-top">
           <Icon
             icon={"ant-design:close-outlined"}
@@ -59,18 +81,7 @@ const Sidebar = ({ onCloseHandler }) => {
           />
         </div>
         <div className="sidebar-content">
-          <div className="sidebar-link" onClick={onCloseHandler}>
-            <a href="#skills">Skills</a>
-          </div>
-          <div className="sidebar-link" onClick={onCloseHandler}>
-            <a href="#projects">Projects</a>
-          </div>
-          <div className="sidebar-link" onClick={onCloseHandler}>
-            <a href="#">Resume</a>
-          </div>
-          <div className="sidebar-link" onClick={onCloseHandler}>
-            <a href="#contact">Contact</a>
-          </div>
+          <NavLinks onCloseHandler={onCloseHandler} />
         </div>
       </div>
     </div>

@@ -153,3 +153,30 @@ input[type="email"] {
 textarea {
   height: 15em;
 }
+
+.hide-on-mobile {
+  display: none;
+}
+
+// Desktop + big screen tablets only
+@media screen and (min-width:768px) {
+
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: flex;
+  }
+
+  .App {
+    max-width: 950px;
+    margin: auto;
+
+
+  }
+
+
+
+}

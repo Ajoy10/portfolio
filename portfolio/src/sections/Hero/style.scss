@@ -13,6 +13,11 @@ main {
         #highlight {
             color: #0D41E1;
         }
+
+        @media screen and (min-width:768px) {
+            font-size: 48px;
+        }
+
     }
 
     .cta {
@@ -28,11 +33,25 @@ main {
 
                 margin: 0px;
             }
+
+            @media screen and (min-width:768px) {
+                margin-top: 18px;
+
+            }
+
         }
+
+
 
         .socials {
             display: flex;
             gap: 12px;
         }
+
+    }
+
+    @media screen and (min-width:768px) {
+        padding-top: 80px;
+        height: auto;
     }
 }
