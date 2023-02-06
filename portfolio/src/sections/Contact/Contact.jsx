@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <h2>Contact</h2>
-      <form id="contact-form" name="contact">
+      <form id="contact-form" name="contact" method="POST">
         {/* Netlify */}
         <input type="hidden" name="form-name" value="contact" />
 
