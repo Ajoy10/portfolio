@@ -38,6 +38,7 @@ export default function Contact() {
       return 0;
     }
 
+    // eslint-disable-next-line no-useless-escape
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     if (email.trim().length <= 0 && !emailRegex.test(email)) {
       e.preventDefault();
