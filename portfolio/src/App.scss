@@ -18,7 +18,7 @@ body {
 
 }
 
-.App {
+.page-wrapper {
   padding: 0px 20px;
 }
 
@@ -190,7 +190,8 @@ textarea {
     display: flex;
   }
 
-  .App {
+  .page-wrapper {
+
     max-width: 950px;
     margin: auto;
 
@@ -219,7 +220,7 @@ textarea {
 
 // Bigg screen
 @media screen and (min-width:2400px) {
-  .App {
+  .page-wrapper {
     max-width: 60%;
     margin: auto;
 
