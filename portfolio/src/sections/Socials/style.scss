@@ -18,4 +18,20 @@ section#socials {
     }
 
     margin-bottom: 48px;
+
+    // Bigg screen
+    @media screen and (min-width:2400px) {
+        svg {
+            scale: 1.8;
+        }
+
+        .card {
+            gap: 40px;
+
+            a.social-link {
+                gap: 24px;
+                font-size: 20px;
+            }
+        }
+    }
 }

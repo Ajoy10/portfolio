@@ -28,4 +28,11 @@ section#contact {
 
         width: 60%;
     }
+
+    // Bigg screen
+    @media screen and (min-width:2400px) {
+        form {
+            gap: 24px;
+        }
+    }
 }

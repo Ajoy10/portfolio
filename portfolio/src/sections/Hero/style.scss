@@ -18,6 +18,10 @@ main {
             font-size: 48px;
         }
 
+        // Bigg screen
+        @media screen and (min-width:2400px) {
+            font-size: 60px;
+        }
     }
 
     .cta {
@@ -36,14 +40,22 @@ main {
 
             @media screen and (min-width:768px) {
                 margin-top: 18px;
+                gap: 32px;
 
                 a.button {
-                    font-size: 22px;
+                    font-size: 30px;
 
                 }
 
             }
 
+            // Bigg screen
+            @media screen and (min-width:2400px) {
+                a.button {
+                    font-size: 36px;
+                    padding: 30px 60px;
+                }
+            }
         }
 
 
@@ -60,4 +72,10 @@ main {
         padding-bottom: 80px;
         height: auto;
     }
+
+    // Bigg screen
+    @media screen and (min-width:2400px) {
+        gap: 64px;
+    }
+
 }
