@@ -6,6 +6,26 @@ section#contact {
 
         .button-group {
             margin-top: 24px;
+
         }
+    }
+
+
+    @media screen and (min-width:768px) {
+        form {
+            max-width: unset;
+
+            .input-text-group {
+                display: flex;
+                gap: 18px;
+
+                .input-group {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        width: 60%;
     }
 }

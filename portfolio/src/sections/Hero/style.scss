@@ -37,6 +37,11 @@ main {
             @media screen and (min-width:768px) {
                 margin-top: 18px;
 
+                a.button {
+                    font-size: 22px;
+
+                }
+
             }
 
         }
@@ -52,6 +57,7 @@ main {
 
     @media screen and (min-width:768px) {
         padding-top: 80px;
+        padding-bottom: 80px;
         height: auto;
     }
 }

@@ -52,9 +52,9 @@ const NavLinks = ({ className, onCloseHandler = null }) => {
       <div className="nav-link" onClick={onCloseHandler}>
         <a href="#projects">Projects</a>
       </div>
-      <div className="nav-link" onClick={onCloseHandler}>
+      {/* <div className="nav-link" onClick={onCloseHandler}>
         <a href="#">Resume</a>
-      </div>
+      </div> */}
       <div className="nav-link" onClick={onCloseHandler}>
         <a href="#contact">Contact</a>
       </div>
