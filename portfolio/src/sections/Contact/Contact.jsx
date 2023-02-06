@@ -6,7 +6,10 @@ export default function Contact() {
   return (
     <section id="contact">
       <h2>Contact</h2>
-      <form id="contact-form">
+      <form id="contact-form" name="contact">
+        {/* Netlify */}
+        <input type="hidden" name="form-name" value="contact" />
+
         <div className="input-text-group">
           <div className="input-group">
             <label htmlFor="first-name">First name</label>
